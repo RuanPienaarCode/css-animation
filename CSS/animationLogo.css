@@ -1,0 +1,51 @@
+ @keyframes animatedGlow {
+     0% {
+         box-shadow: 0 0 20px 10px #7EAECE;
+         border-radius: 275px;
+         filter: saturate(100%);
+     }
+
+     50% {
+         box-shadow: 0 0 15px 8px #CCDFEC;
+         filter: saturate(200%);
+     }
+
+     100% {
+         box-shadow: 0 0 20px 10px #7EAECE;
+         border-radius: 275px;
+         transform: translate(0px, 5px);
+         filter: saturate(100%);
+     }
+
+
+
+ }
+
+ div {
+     margin: 50px;
+     width: 100px;
+     height: 100px;
+     background-color: #fff;
+     
+
+ }
+
+ div:hover{
+
+    animation-name: animatedGlow;
+     animation-duration: 2s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+     animation-direction: alternate;
+     
+ }
+
+ img {
+     width: 100px;
+     ttransition: transform 0.8s ease-in-out;
+ }
+
+ img:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+ }
